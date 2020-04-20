@@ -1,0 +1,8 @@
+dist: focal
+group: dev
+
+isntall: skip
+
+script:
+- cat /etc/os-release
+- uname -a
