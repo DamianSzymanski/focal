@@ -1,7 +1,7 @@
 dist: focal
-# group: dev
+group: dev
 
-isntall: skip
+install: skip
 
 script:
 - cat /etc/os-release
