@@ -1,4 +1,5 @@
-dist: xenial
+dist: focal
+language: minimal
 group: dev
 
 install: skip
