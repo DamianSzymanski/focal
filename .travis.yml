@@ -8,7 +8,7 @@ install: skip
 script:
 - cat /etc/os-release
 - uname -a
-- sudo cat /etc/docker/*
+- sudo cat /etc/docker/daemon.json
 - docker run ubuntu
 - docker ps
 - ip a
