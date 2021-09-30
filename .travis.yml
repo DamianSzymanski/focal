@@ -1,5 +1,5 @@
 dist: focal
-language: ruby
+# language: ruby
 # language: minimal
 # group: dev
 
@@ -8,5 +8,6 @@ install: skip
 script:
 - cat /etc/os-release
 - uname -a
-- systemd-analyze time
-- systemd-analyze blame
+- cat /etc/docker/*
+#- systemd-analyze time
+#- systemd-analyze blame
