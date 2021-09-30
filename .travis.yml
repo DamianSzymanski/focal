@@ -8,6 +8,9 @@ install: skip
 script:
 - cat /etc/os-release
 - uname -a
-- cat /etc/docker/*
+- sudo cat /etc/docker/*
+- docker run ubuntu
+- docker ps
+- ip a
 #- systemd-analyze time
 #- systemd-analyze blame
