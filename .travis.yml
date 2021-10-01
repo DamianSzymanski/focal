@@ -1,12 +1,36 @@
-dist: xenial
-# language: ruby
-# language: minimal
-# group: dev
+jobs:
+  include:
+    - os: linux
+      dist: trusty
+      group: dev
+      script:
+        - curl https://asset-packagist.org/packages.json
+    - os: linux
+      dist: xenial
+      group: dev
+      script:
+        - sudo apt-get update
+        - sudo apt-get upgrade -y
+        - curl https://asset-packagist.org/packages.json
+    - os: linux
+      dist: bionic
+      script:
+        - curl https://asset-packagist.org/packages.json
+    - os: linux
+      dist: focal
+      script:
+        - curl https://asset-packagist.org/packages.json
 
-install: skip
 
-script:
-- sudo cat /etc/ssl/certs/ca-certificates.crt
+# dist: xenial
+# # language: ruby
+# # language: minimal
+# # group: dev
+
+# install: skip
+
+# script:
+# - sudo cat /etc/ssl/certs/ca-certificates.crt
 # - cat /etc/os-release
 # - uname -a
 # - sudo systemctl restart docker
