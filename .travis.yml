@@ -1,4 +1,4 @@
-dist: focal
+dist: xenial
 # language: ruby
 # language: minimal
 # group: dev
@@ -6,12 +6,13 @@ dist: focal
 install: skip
 
 script:
-- cat /etc/os-release
-- uname -a
-- sudo systemctl restart docker
-- sudo cat /etc/docker/daemon.json
-- docker run ubuntu
-- docker ps
-- ip a
+- sudo cat /etc/ssl/certs/ca-certificates.crt
+# - cat /etc/os-release
+# - uname -a
+# - sudo systemctl restart docker
+# - sudo cat /etc/docker/daemon.json
+# - docker run ubuntu
+# - docker ps
+# - ip a
 #- systemd-analyze time
 #- systemd-analyze blame
