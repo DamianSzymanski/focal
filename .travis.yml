@@ -11,6 +11,7 @@ jobs:
       script:
         - sudo apt-get update
         - sudo apt-get install ca-certificates openssl -y
+        - sudo update-ca-certificates
         - curl https://asset-packagist.org/packages.json
     - os: linux
       dist: bionic
