@@ -30,6 +30,11 @@ jobs:
       dist: focal
       script:
         - curl https://asset-packagist.org/packages.json
+    - os: linux
+      dist: focal-dev
+      group: dev
+      script:
+        - curl https://asset-packagist.org/packages.json
 
 
 # dist: xenial
