@@ -31,7 +31,8 @@ jobs:
       script:
         - curl https://asset-packagist.org/packages.json
     - os: linux
-      dist: focal-dev
+      name: focal-dev
+      dist: focal
       group: dev
       script:
         - curl https://asset-packagist.org/packages.json
