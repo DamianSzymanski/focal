@@ -1,10 +1,10 @@
 jobs:
   include:
-    - os: linux
-      dist: trusty
-      group: dev
-      script:
-        - curl https://asset-packagist.org/packages.json
+#     - os: linux
+#       dist: trusty
+#       group: dev
+#       script:
+#         - curl https://asset-packagist.org/packages.json
     - os: linux
       dist: xenial
       group: dev
@@ -34,6 +34,12 @@ jobs:
       name: focal-dev
       dist: focal
       group: dev
+      script:
+        - curl https://asset-packagist.org/packages.json
+    - os: linux
+      name: focal-min
+      dist: focal
+      language: minimal
       script:
         - curl https://asset-packagist.org/packages.json
 
