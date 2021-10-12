@@ -7,21 +7,23 @@ jobs:
 #         - curl https://asset-packagist.org/packages.json
     - os: linux
       dist: xenial
-      group: dev
+      group: edge
       script:
         #- sudo apt-get update
         #- sudo apt-get install ca-certificates openssl -y
         #- sudo update-ca-certificates
         - curl https://asset-packagist.org/packages.json
+        - docker version
     - os: linux
       dist: xenial
-      language: bash
-      group: dev
+#       language: bash
+#       group: dev
       script:
         #- sudo apt-get update
         #- sudo apt-get install ca-certificates openssl -y
         #- sudo update-ca-certificates
         - curl https://asset-packagist.org/packages.json
+        - docker version
     - os: linux
       dist: bionic
       script:
